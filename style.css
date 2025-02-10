@@ -1,4 +1,62 @@
-body {
-    background-color: orange;
+*{
+margin: 0;
+padding: 0;
+font-family: 'Roboto Condensed', sans-serif;
+box-sizing: border-box;
 }
-  
+.hero {
+    background: rgba(29, 32, 38, 1);
+    background-image: url(images/backgroundcode.png);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; /* Legger fargen over bildet med blanding */
+    min-height: 100vh;
+    width: 100%;
+    color: #fff;
+    position: relative;
+    opacity: 1; /* Sikrer at alt annet ikke blir gjennomsiktig */
+}
+nav{
+    display: flex;
+    align-items: center;
+    padding: 20px 3%;
+}
+nav .menu-img{
+    width: 50px;
+    margin-right: 40px;
+    cursor: pointer;
+}
+nav .logo{
+    width: 260px;
+    padding-top: 30px;
+    cursor: pointer;
+}
+nav ul{
+    flex: 1;
+    text-align: right;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 0 20px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+button{
+    background: #efefef;
+    height: 30px;
+    width: 60px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+}
+button span{
+    display: block;
+    background: #999;
+    height: 26px;
+    width: 26px;
+    border-radius: 50%;
+}
