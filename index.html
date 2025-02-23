@@ -1,36 +1,74 @@
-<!-- https://youtu.be/RlC1bawrcbk?t=635 -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
     <title>Nettside 1</title>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400&display=swap" rel="stylesheet">
-
-
 </head>
 <body>
-<div class="hero">
-    <nav>
-        <img src="images/menuslant.png" class="menu-img">
-        <img src="images/logodark.png" class="logo">
-        <ul>
-            <li><a href="https://youtube.com">F.A.Q</a></li>
-            <li><a href="">Modern</a></li>
-            <li><a href="">Contemporary</a></li>
-            <li><a href="">Affordable</a></li>
-        </ul>
-        <button type="button"><span></span></button>
-    </nav>
+    <section class="hero">
+        <nav>
+            <img src="images/menuslant.png" class="menu-img">
+            <ul>
+                <li><a href="#info-page">F.A.Q</a></li>
+                <li><a href="html.html">HTML</a></li>
+                <li><a href="css.html">CSS</a></li>
+                <li><a href="javascript.html">Javascript</a></li>
+                <li><a href="#register-page">Sign Up</a></li>
+            </ul>
+        </nav>
+        <div class="intro">
+            <h1>HTML</h1>
+            <p>Hva er det? Hvordan funker det?</p>
+        </div>
+    </section>
+    
+    <section id="info-page" class="info-page">
+        <div class="container">
+            <div class="hva-er-html">
+                <h1>Hva er HTML?</h1>
+                <p>
+                    HTML (HyperText Markup Language) er det som bygger opp nettsider.
+                    Det bestemmer hvor tekst, bilder, videoer og lenker skal plasseres.
+                    Sammen med CSS for stil og JavaScript for funksjoner,
+                    gjør HTML det mulig å lage nettsider akkurat slik du vil ha dem.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <h1>Hva er CSS?</h1>
+                <p>
+                    CSS (Cascading Style Sheets) er språket som gir nettsider stil og design.
+                Det bestemmer farger, skrifttyper, avstander, oppsett og animasjoner.
+                Ved å bruke CSS sammen med HTML, kan du skape visuelt attraktive og responsive nettsider.
+                </p>
+                <br>
+                <hr>
+                <br>
+                <h1>Hva er Javascript?</h1>
+                <p>
+                    JavaScript er et programmeringsspråk som gjør nettsider interaktive. Det lar deg legge til dynamiske elementer som knapper som reagerer på klikk, animasjoner, skjemaer som validerer brukerinput, og mye mer.
+                    Sammen med HTML for struktur og CSS for design, er JavaScript en av de tre hovedteknologiene som brukes til å bygge moderne nettsider og webapplikasjoner.
+                </p>
+            </div>
+        </div>
+    </section>
 
+    <section id="register-page" class="register-section">
+        <h2>Registrer deg</h2>
+        <form action="save.php" method="POST">
+            <input type="text" name="name" id="name" placeholder="Ditt navn" required>
+            <input type="email" name="email" id="email" placeholder="Din e-post" required>
+            <button type="submit">Registrer</button>
+        </form>
+    </section>
 
-    <div
-
-
-</div>
+    <footer>
+        <p style="background-color: #121224; color: rgb(191, 197, 218); padding: 10px; text-align: center;">
+            © 2025 Erik's Nettside
+        </p>
+    </footer>
 </body>
 </html>
