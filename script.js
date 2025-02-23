@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Håndtering av skjemainnsending
     document.querySelector("form").addEventListener("submit", function (event) {
-        event.preventDefault(); // Forhindre at skjemaet sender data på vanlig måte
+        event.preventDefault(); 
 
         let name = document.getElementById("name").value.trim();
         let email = document.getElementById("email").value.trim();
@@ -22,15 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Håndtering av toggle switch
     const checkbox = document.getElementById("colorToggle");
     const slider = document.querySelector(".slider");
 
     checkbox.addEventListener("change", function () {
         if (checkbox.checked) {
-            slider.classList.add("active"); // Legg til 'active' klassen når aktivert
+            slider.classList.add("active"); 
         } else {
-            slider.classList.remove("active"); // Fjern 'active' klassen når deaktivert
+            slider.classList.remove("active"); 
         }
     });
 });
